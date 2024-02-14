@@ -58,6 +58,7 @@
             <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
             <x-input-error for="name" class="mt-2" />
         </div>
+        
 
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
@@ -81,6 +82,13 @@
                 @endif
             @endif
         </div>
+        
+        <!-- Phone number -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="Phone" value="{{ __('Phone') }}" />
+            <x-input id="phone" type="text" class="mt-1 block w-full" wire:model.defer="state.phone" autocomplete="phone" />
+            <x-input-error for="phone" class="mt-2" />
+        </div> 
     </x-slot>
 
     <x-slot name="actions">
